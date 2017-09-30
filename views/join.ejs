@@ -1,0 +1,19 @@
+<% include partials/header %>
+<% include partials/navbar %>
+<div class="container-fluid join">
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+      <h2 class="joinTitle">Join A Chat Room</h2>
+    </div>
+    <div class="col-sm-9">
+      <label>User Name</label>
+      <input type="text" name="userName" value="CoolDude77" id="userName"></input>
+      <br><input class="full" type="text" placeholder="Search for a room" id="roomSearch"></input>
+      <div id="rooms">
+      </div>
+    </div>
+  </div>
+</div>
+<% var scriptDir = "/js/joinClient.js"; %>
+<% include partials/visualFooter %>
+<% include partials/footer %>

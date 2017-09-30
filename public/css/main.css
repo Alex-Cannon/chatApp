@@ -1,0 +1,125 @@
+@import url(/css/override.css);
+.btn-primary {
+  background-color: #427AA1;
+  color: #EBF2FA;
+  border: 1px solid #05668D;
+  margin-top: 2px; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #EBF2FA;
+  color: #05668D; }
+
+a:hover {
+  cursor: pointer; }
+
+button:hover {
+  cursor: pointer; }
+
+.checkbox {
+  width: 20px;
+  height: 0.9em; }
+
+.checkbox:hover {
+  cursor: pointer; }
+
+.home {
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 17px; }
+
+.home .btn-primary {
+  width: 140px;
+  margin-left: 2px;
+  margin-right: 2px; }
+
+.home .title {
+  margin-bottom: 40px; }
+
+.home .btnGroup {
+  margin-top: 6px; }
+
+.create {
+  margin-top: 100px;
+  font-size: 17px; }
+
+.full {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.create #publicBtn {
+  margin-top: 10px; }
+
+.create #submit {
+  padding-top: 6px; }
+
+.create #submit:hover {
+  cursor: pointer; }
+
+.join {
+  margin-top: 30px; }
+
+.joinTitle {
+  margin-bottom: 30px; }
+
+#roomSearch {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.join .chatRoom {
+  background-color: #427AA1;
+  color: #EBF2FA;
+  margin-bottom: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.chat {
+  margin-top: 40px;
+  font-size: 15px; }
+
+.chatBox {
+  height: 430px;
+  overflow-y: scroll;
+  padding: 10px; }
+
+.textboxParent {
+  width: 100%;
+  padding-right: 20px;
+  display: table-cell; }
+
+.submitParent {
+  display: table-cell;
+  vertical-align: top; }
+
+#chatTextbox {
+  float: left;
+  min-height: 60px;
+  width: 100%; }
+
+.otherMsg {
+  background-color: #427AA1;
+  color: #EBF2FA;
+  padding: 4px;
+  margin-bottom: 5px;
+  width: 48%; }
+
+.ourMsg {
+  background-color: #679436;
+  color: #EBF2FA;
+  margin-bottom: 5px;
+  margin-left: auto;
+  padding: 4px;
+  width: 48%; }
+
+.footer {
+  margin-top: 80px;
+  display: table;
+  width: 100%;
+  background-color: #427AA1;
+  color: #EBF2FA;
+  height: 100px; }
+
+.footerContent {
+  display: table-cell;
+  vertical-align: center; }

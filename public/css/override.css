@@ -1,0 +1,138 @@
+/*This file was generated @ https://work.smarchal.com/twbscolor/css/e74c3cc0392becf0f1ffbbbc0
+  it was NOT my own work. This method was much faster.
+*/
+.navbar {
+  background-color: #05668d;
+}
+.navbar .navbar-brand {
+  color: #ebf2fa;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #cfee01;
+}
+.navbar .navbar-text {
+  color: #ebf2fa;
+}
+.navbar .navbar-nav .nav-link {
+  color: #ebf2fa;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: #cfee01;
+}
+.navbar .navbar-nav .dropdown-menu {
+  background-color: #05668d;
+  border-color: #427aa1;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  color: #ebf2fa;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+  color: #cfee01;
+  background-color: #427aa1;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-divider {
+  border-top-color: #427aa1;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #cfee01;
+  background-color: #427aa1;
+}
+.navbar .navbar-toggle {
+  border-color: #427aa1;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #427aa1;
+}
+.navbar .navbar-toggle .navbar-toggler-icon {
+  color: #ebf2fa;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #ebf2fa;
+}
+.navbar .navbar-link {
+  color: #ebf2fa;
+}
+.navbar .navbar-link:hover {
+  color: #cfee01;
+}
+
+@media (max-width: 575px) {
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ebf2fa;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #cfee01;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #cfee01;
+    background-color: #427aa1;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ebf2fa;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #cfee01;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #cfee01;
+    background-color: #427aa1;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ebf2fa;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #cfee01;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #cfee01;
+    background-color: #427aa1;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ebf2fa;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #cfee01;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #cfee01;
+    background-color: #427aa1;
+  }
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #ebf2fa;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+  color: #cfee01;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #cfee01;
+  background-color: #427aa1;
+}

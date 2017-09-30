@@ -1,0 +1,10 @@
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <%if(typeof scriptDir !== 'undefined'){ %>
+      <!--Setting up Socket.io for the Client-side-->
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="<%=scriptDir%>"></script>
+    <%}%>
+  </body>
+</html>

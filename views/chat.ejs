@@ -1,0 +1,48 @@
+<% include partials/header %>
+<% include partials/navbar %>
+<div class="container-fluid chat">
+  <div class="text-center">
+    <h3><%=typeof roomName !== 'undefined'? roomName:"Chill Chat Room"%></h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-0 col-md-2"></div>
+    <div class="col-sm-8 col-md-6">
+      <div class="card">
+        <div class="card-block chatBox">
+        </div>
+        <div class="card-footer">
+          <div id="messageForm">
+            <table>
+              <tr>
+                <td class="textboxParent">
+                  <textarea id="chatTextbox" class="form-control" placeholder="Enter Message"></textarea>
+                </td>
+                <td class="submitParent">
+                  <button class="btn btn-primary" id="sendMsgBtn">Send</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3">
+      <div class="card">
+        <div class="card-header">
+          <h5 id="userName">
+            <%=typeof userName !== 'undefined'? userName:"Anonymous"%>
+          </h5>
+        </div>
+        <div class="card-block">
+          Users:
+          <ol id="userList">
+
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% var scriptDir = "/js/chatClient.js";%>
+<% include partials/visualFooter %>
+<% include partials/footer %>

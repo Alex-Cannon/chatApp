@@ -1,0 +1,18 @@
+<% include partials/header %>
+<% include partials/navbar %>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-5 col-sm-7 create">
+      <form id="createForm">
+        <h1>Create a Chat Room</h1>
+        <label>User Name</label>
+        <input class="full" type="text" placeholder="Enter Your User Name" name="ownerName" required></input>
+        <label>Chat Room Name</label>
+        <input class="full" type="text" placeholder="Enter Chat Room Name" name="roomName" required></input>
+        <input type="submit" class="full rounded btn-primary" id="submit"></input>
+      </form>
+    </div>
+  </div>
+</div>
+<% var scriptDir = "/js/createClient.js"; %>
+<% include partials/footer %>

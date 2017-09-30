@@ -1,0 +1,136 @@
+//Overwrite Some default Bootstrap Classes
+@import "/css/override.css";
+
+//color pallete
+$white: #EBF2FA;
+$blue: #427AA1;
+$seaBlue: #05668D;
+$green: #679436;
+$limeGreen: #A5BE00;
+$darkGreen: #4f5a04;
+//Fonts
+$chatFont: 'Muli', sans-serif;
+$pageFont: 'Josefin Sans', sans-serif;
+
+//Customize Bootstrap classes------------------------
+.btn-primary{
+  background-color: $blue;
+  color: $white;
+  border: 1px solid $seaBlue;
+  margin-top: 2px; }
+
+//General SCSS-------------------------------------
+body{
+  font-family: $pageFont;
+  background-color: $white;
+  color: $seaBlue; }
+
+a:hover{cursor:pointer;}
+
+button:hover{cursor:pointer;}
+
+.checkbox{
+  width: 20px;
+  height: 0.9em; }
+
+.checkbox:hover{cursor:pointer;}
+
+//Home Page-----------------------------------------------
+.home{
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 17px; }
+
+.home .btn-primary{
+  width: 140px;
+  margin-left: 2px;
+  margin-right: 2px; }
+
+.home .title{ margin-bottom: 40px; }
+
+.home .btnGroup{margin-top: 6px;}
+
+//Create Page------------------------------------------
+.create{
+  margin-top: 100px;
+  font-size: 17px; }
+
+.full{
+  width: 100%;
+  margin-bottom: 10px;}
+
+.create #publicBtn {margin-top: 10px;}
+
+.create #submit{padding-top: 6px;}
+
+.create #submit:hover{cursor:pointer;}
+
+//Join page------------------------------------------
+.join{margin-top: 30px;}
+
+.joinTitle{margin-bottom: 30px;}
+
+#roomSearch{
+  margin-top: 15px;
+  margin-bottom: 15px;}
+
+.join .chatRoom{
+  background-color: $blue;
+  color: $white;
+  margin-bottom: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+//Chat page---------------------------------------------
+.chat{
+  margin-top: 40px;
+  font-size: 15px; }
+
+.chatBox{
+  height: 430px;
+  overflow-y: scroll;
+  padding: 10px; }
+
+.textboxParent{
+  width: 100%;
+  padding-right: 20px;
+  display: table-cell; }
+
+.submitParent{
+  display: table-cell;
+  vertical-align: top; }
+
+#chatTextbox{
+  float: left;
+  min-height: 60px;
+  width: 100%;}
+
+.otherMsg{
+  background-color: $blue;
+  color: $white;
+  padding: 4px;
+  margin-bottom: 5px;
+  width: 48%; }
+
+.ourMsg{
+  background-color: $green;
+  color: $white;
+  margin-bottom: 5px;
+  margin-left: auto;
+  padding: 4px;
+  width: 48%; }
+
+//Footer-------------------------------------------------------
+.footer{
+  margin-top: 80px;
+  display: table;
+  width: 100%;
+  background-color: $blue;
+  color: $white;
+  height: 100px; }
+
+.footerContent{
+  display: table-cell;
+  vertical-align: center;}
