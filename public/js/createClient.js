@@ -32,7 +32,7 @@ $(document).ready(function(){
       dataType: 'json',
       data: roomData,
       success:function redirectUser(data){
-        redirect('/chat/'+ data.id +"?userName=" + roomData.ownerName);
+        redirect('/chat/'+ data.id +"?userName=" + roomData.ownerName+"&userID=1");
       },
       error: function retry(xml, status, err){
         console.log("error");

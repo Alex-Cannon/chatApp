@@ -4,10 +4,15 @@
   <div class="text-center">
     <h3><%=typeof roomName !== 'undefined'? roomName:"Chill Chat Room"%></h3>
   </div>
-  <div class="row">
-    <div class="col-sm-0 col-md-2"></div>
-    <div class="col-sm-8 col-md-6">
+  <div class="row justify-content-center">
+    <div class="col-sm-10 col-md-8">
       <div class="card">
+        <div class="card-header">
+          <h5 id="userName">
+            <%=typeof user !== 'undefined'? user.userName:"Anonymous"%>
+          </h5>
+          <i class="hidden" id="userID"><%=typeof user !== 'undefined'? user.userID:0%></i>
+        </div>
         <div class="card-block chatBox">
         </div>
         <div class="card-footer">
@@ -23,21 +28,6 @@
               </tr>
             </table>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-md-3">
-      <div class="card">
-        <div class="card-header">
-          <h5 id="userName">
-            <%=typeof userName !== 'undefined'? userName:"Anonymous"%>
-          </h5>
-        </div>
-        <div class="card-block">
-          Users:
-          <ol id="userList">
-
-          </ol>
         </div>
       </div>
     </div>

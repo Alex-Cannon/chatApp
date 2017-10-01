@@ -1,14 +1,14 @@
 $(document).ready(function(){
   var socket = io.connect();
-  var curUsers = [];
   socket.emit('join', 'room data');
 
+  //Sends a message to the server on click
   $("#sendMsgBtn").click(function sendMessage(){
-    console.log("button hit");
     if($("#chatTextbox").val() !== ""){
+      console.log($("#userID").text());
       //send message
       socket.emit('chat message',
-      {from:$("#userName").text().replace(/\s/g,''), msg:$("#chatTextbox").val()});
+      {userName:$("#userName").text(), userID:$("#userID").text(), msg:$("#chatTextbox").val()});
       //empty chat box
       $("#chatTextbox").val("");
     }
@@ -18,33 +18,23 @@ $(document).ready(function(){
   var updateChat = function(msgData){
     console.log("got msg data: " + JSON.stringify(msgData));
     if(msgData){
-      if(msgData.from === $("#userName").text().replace(/\s/g,'')){
+      if(msgData.userID === $("#userID").text()){
         $(".chatBox").append(
           '<div class="ourMsg rounded">'+
-            '<i>'+msgData.from+':</i><br>'+
+            '<i>'+msgData.userName+':</i><br>'+
             msgData.msg+
           '</div>');
       }else{
         $(".chatBox").append(
           '<div class="otherMsg rounded">'+
-            '<i>'+msgData.from+':</i><br>'+
+            '<i>'+msgData.userName+':</i><br>'+
             msgData.msg+
           '</div>');
       }
     }
   }
 
-  //Updates the users when someone disconnects or connects
-  var updateUsers = function(data){
-    console.log(JSON.stringify(data.current));
-    $("#userList").empty();
-    for(let i = 0; i < data.current.length; i++){
-      $("#userList").append('<li>'+data.current[i]+'</li>');
-    }
-  }
-
-  //updates a chat upon server changes
+  //updates the chat when someone sends a message
   socket.on('chat message', updateChat);
 
-  socket.on('user', updateUsers);
 });

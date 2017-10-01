@@ -1,9 +1,20 @@
 $(document).ready(function(){
 
+  //Redirects the user to Base url + provided path
+	var redirect = function(path)
+	{
+		window.location.href = window.location.protocol + "//" + window.location.hostname + ':' + window.location.port + path;
+	}
+
   //Gets the base url
   var getBaseURL = function()
   {
     return window.location.protocol + "//" + window.location.hostname + ':' + window.location.port;
+  }
+
+  //Returns a random integer between the min and mix values
+  function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   //Returns an array of chat Rooms that match the query
@@ -17,17 +28,16 @@ $(document).ready(function(){
         console.log('search success');
         console.log(data);
         $("#rooms").empty();
-        let userName = $("#userName").val().replace(/\s/, "") != ""?$("#userName").val():"Anon";
         for(let i = 0; i < data.length; i++)
         {
           $("#rooms").append(
             '<div class="row">'+
-            '<a class="col chatRoom rounded" href="/chat/'+data[i]._id+'?userName='+
-            userName+'">'+data[i].roomName+'</a>'+
+              '<button class="col chatRoom rounded" id="'+data[i]._id+'">'+
+                data[i].roomName+
+              '</button>'+
             '</div>'
           );
         }
-
       },
       error: function displayError(){
         $("#rooms").empty();
@@ -41,6 +51,18 @@ $(document).ready(function(){
       }
     })
   }
+
+  //'chat/'+data[i]._id+'?userName='+userName+'&userID='+getRandom(2,10000000)
+  $("#rooms").on('click', function(e){
+    if(e.target.id == "rooms"){
+      return;
+    }
+		let userId = getRandom(2,10000000);
+    if($("#userName").val() == ""){
+      $("#userName").val("Anon"+userId);
+    }
+    redirect('/chat/'+e.target.id+'?userName='+$("#userName").val()+'&userID='+userId);
+  });
 
   $("#roomSearch").on("keyup", function(e) {
     if(e.keyCode == 13 && $("#searchbar").val() != "")
